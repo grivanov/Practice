@@ -8,14 +8,9 @@ def get_n_longest_unique_words(words, n):
         else:
             unique_words.append(element)
 
-    def len_sort(a):
-        return len(a)
+    result_list = sorted(unique_words, key=len, reverse=True)
 
-    unique_words.sort(key=len_sort, reverse=True)
-
-    result_list = unique_words[:n]
-
-    return result_list
+    return result_list[:3]
 
 
 words = [
