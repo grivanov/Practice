@@ -5,10 +5,7 @@ def pairs_sum_to_target(list1, list2, target):
     for idx, elem in enumerate(list1):
         for index, sub_el in enumerate(list2):
             if elem + sub_el == target:
-                temp_list = list()
-                temp_list.append(idx)
-                temp_list.append(index)
-                result_list.append(temp_list)
+                result_list.append([idx, index])
     
     return(result_list)
 
